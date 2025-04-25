@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="search-bar" placeholder="Search Doctor Name...">
+    </header>
+    <div class="container">
+        <aside class="filter-panel">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Consultation Type</h3>
+                <label><input type="radio" name="consultation" value="All" checked> All</label><br>
+                <label><input type="radio" name="consultation" value="Video Consultation"> Video Consultation</label><br>
+                <label><input type="radio" name="consultation" value="Clinic Consultation"> Clinic Consultation</label><br>
+            </div>
+            <div class="filter-group">
+                <h3>Specialties</h3>
+                <label><input type="checkbox" name="specialty" value="Dentist"> Dentist</label><br>
+                <label><input type="checkbox" name="specialty" value="Cardiologist"> Cardiologist</label><br>
+                <label><input type="checkbox" name="specialty" value="Oncologist"> Oncologist</label><br>
+                <label><input type="checkbox" name="specialty" value="Ayurveda"> Ayurveda</label><br>
+                <label><input type="checkbox" name="specialty" value="Homeopath"> Homeopath</label><br>
+                </div>
+            <div class="filter-group">
+                <h3>Sort By</h3>
+                <label><input type="radio" name="sort" value="price-low-high"> Price: Low-High</label><br>
+                <label><input type="radio" name="sort" value="experience-high-low"> Experience: Most Experienced First</label><br>
+            </div>
+        </aside>
+        <main class="doctor-list" id="doctor-list-container">
+            </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
